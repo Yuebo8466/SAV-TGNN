@@ -33,8 +33,8 @@ progress_loop_msg <- function(i, n, prefix = "Progress", every = 10) {
 
 DATA_YEAR_START <- 1999L
 DATA_YEAR_END <- 2024L
-TIME_WINDOW <- 11L
-PROJECT_ROOT <- ".."  
+TIME_WINDOW <- 12L
+PROJECT_ROOT <- "."  
 MODEL_SEED <- 1234L
 THRESHOLD_CRITERION <- "F1"
 # <<< [MAXENT-NODE-MASK-FIX-01]
