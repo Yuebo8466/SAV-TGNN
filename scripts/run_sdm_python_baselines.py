@@ -320,7 +320,7 @@ def main():
     shared_dir = root / "results" / "sdm" / "shared"
     shared_dir.mkdir(parents=True, exist_ok=True)
     mask_file_out = shared_dir / (
-        f"tgnn_node_masks_{target_years[0]}_{target_years[-1]}.csv"
+        f"tgnn_{target_years[0]}_{target_years[-1]}.csv"
     )
     mask_cols = [
         "year", "NodeID", "label_mask_source", "label_mask",
