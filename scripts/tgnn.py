@@ -1059,8 +1059,16 @@ def main():
                 f"min={edge_min}, max={edge_max}."
             )
 
-    log_dir = os.path.join(root, "results", "training_logs")
+    run_dir = (
+        os.path.join(root, "results")
+        if exp_model == "GCN_GRU"
+        else os.path.join(root, "results", "sdm", exp_model)
+    )
+    os.makedirs(run_dir, exist_ok=True)
+
+    log_dir = os.path.join(run_dir, "training_logs")
     os.makedirs(log_dir, exist_ok=True)
+
     run_tag = f"_{args.run_tag}" if args.run_tag else ""
 
     config = base_training_config(args)
@@ -1096,7 +1104,7 @@ def main():
         f"model_{exp_model}_{task_mode}_T{T_Window}_lam{lam_tag}_neg{neg_tag}"
         f"{run_tag}_OptimizedStable"
     )
-    out_path = os.path.join(root, f"{base_name}.pth")
+    out_path = os.path.join(run_dir, f"{base_name}.pth")
 
     final_result = fit_once(
         args, config, data_list, edge_index, in_dim,
