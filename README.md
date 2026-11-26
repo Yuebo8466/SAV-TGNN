@@ -72,7 +72,7 @@ python scripts/run_sdm_python_baselines.py --years 1999:2024 --time-window 12 --
 
 Use `--no-xgb` to run without XGBoost. Match `--time-window` to the TGNN run. The example explicitly uses the currently available labeled years; update `--years` if additional labels are provided.
 
-Metrics, predictions and fitted baseline models are saved in `results1/sdm/python_baselines/`. The shared node-mask file is saved in `results/sdm/shared/`.
+Metrics, predictions and fitted baseline models are saved in `results/sdm/python_baselines/`. The shared node-mask file is saved in `results/sdm/shared/`.
 
 ## 5. Run GAM and MaxEnt
 
