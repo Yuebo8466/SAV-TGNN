@@ -96,7 +96,7 @@ label_file_for_year <- function(year) {
   candidates <- c(
 
     file.path(root, "data/raw/AnnualLabelsforTGNN", paste0("labels_", year, ".csv")),
-    file.path(root, "data/raw/AnnualLabelsforTGNN", paste0("label_", year, ".csv")),
+    file.path(root, "data/raw/AnnualLabelsforTGNN", paste0("label_", year, ".csv"))
 
   )
   hit <- candidates[file.exists(candidates)]
