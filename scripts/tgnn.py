@@ -41,8 +41,7 @@ def parse_args():
     )
     parser.add_argument(
         "--exp-model", default=exp_model,
-        choices=["GCN_GRU", "GAT_LSTM", "TGCN", "TGAT", "A3T_GCN",
-                 "GRU_ONLY", "GCN_STATIC", "MLP_STATIC"]
+        choices=["GCN_GRU","GRU_ONLY", "GCN_STATIC", "MLP_STATIC"]
     )
     parser.add_argument("--task-mode", default=task_mode, choices=["multi", "cls", "reg"])
     parser.add_argument("--time-window", type=int, default=T_Window)
