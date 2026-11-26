@@ -20,11 +20,6 @@ from sklearn.metrics import (
 from dataset_AllMap_multitask import SAVFullGraphAnnualDatasetMultiTask
 
 from modelAllMap.GCN_GRU_Temporal_MultiTask import MultiTask_GCN_GRU_Temporal
-from modelAllMap.GAT_LSTM_Temporal_MultiTask import MultiTask_GAT_LSTM_Temporal
-from modelAllMap.TGCN_Temporal_MultiTask import MultiTask_TGCN_Temporal
-from modelAllMap.TGAT_Temporal_MultiTask import MultiTask_TGAT_Temporal
-from modelAllMap.A3T_GCN_Temporal_MultiTask import MultiTask_A3TGCN_Temporal
-
 from modelAllMap.GRU_Temporal_MultiTask import MultiTask_GRU_Temporal
 from modelAllMap.GCN_Static_MultiTask import MultiTask_GCN_Static
 from modelAllMap.MLP_Static_MultiTask import MultiTask_MLP_Static
@@ -32,10 +27,6 @@ from modelAllMap.MLP_Static_MultiTask import MultiTask_MLP_Static
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 exp_model = 'GCN_GRU'
-#exp_model = 'GAT_LSTM'
-#exp_model = 'TGCN'
-#exp_model = 'TGAT'
-#exp_model = 'A3T_GCN'
 #对比
 #exp_model = 'GRU_ONLY'   #(no graph)
 #exp_model = 'GCN_STATIC' #(no temporal)
