@@ -227,7 +227,7 @@ def main():
         help="Project root.",
     )
     parser.add_argument(
-        "--out-dir", default="results1/sdm/python_baselines"
+        "--out-dir", default="results/sdm/python_baselines"
     )
 
     parser.add_argument("--years", default=DEFAULT_DATA_YEARS)
