@@ -22,7 +22,7 @@ from sklearn.pipeline import Pipeline
 
 DATA_YEAR_START = 1999
 DATA_YEAR_END = 2024
-TIME_WINDOW = 11
+TIME_WINDOW = 12
 FEATURE_MODE = "current"       # current\lagged
 MASK_SEED = 1234               #
 MODEL_SEED = 1234              #
